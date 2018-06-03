@@ -13,7 +13,7 @@ echo DB_SERVER_USER: ${DB_SERVER_USER:=$MYSQL_ENV_MYSQL_USER}
 echo DB_SERVER_PASSWORD: ${DB_SERVER_PASSWORD:=$MYSQL_ENV_MYSQL_PASSWORD}
 echo DB_SERVER_DATABASE: ${DB_SERVER_DATABASE:=$MYSQL_ENV_MYSQL_DATABASE}
 
-sleep 10
+sleep 50
 
 sed -i -e "s/{{DB_SERVER_DBMS}}/$DB_SERVER_DBMS/g" /root/install/scheduler_install.xml /root/install/joc/joc_install.xml
 sed -i -e "s/{{DB_SERVER_HOST}}/$DB_SERVER_HOST/g" /root/install/scheduler_install.xml /root/install/joc/joc_install.xml
