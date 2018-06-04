@@ -5,7 +5,7 @@ ENV SOS_JS_URL https://download.sos-berlin.com/JobScheduler.1.12/jobscheduler_li
 ENV SOS_JOC_URL https://download.sos-berlin.com/JobScheduler.1.12/joc_linux.1.12.0.tar.gz
 
 #add packages - needed for alpine
-RUN apt install curl tar bash sed vi
+RUN apt install curl tar bash sed
 
 #download and install scheduler
 RUN curl -o /root/jobscheduler.tar.gz $SOS_JS_URL
